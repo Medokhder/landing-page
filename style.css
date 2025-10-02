@@ -500,6 +500,8 @@ body {
   #cards {
     flex-direction: column;
     gap: 1em;
+    align-items: center;
+    justify-content: center;
   }
 
   /* reduce large horizontal paddings used on wide screens */
