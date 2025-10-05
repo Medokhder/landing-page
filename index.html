@@ -13,10 +13,7 @@
   <body>
     <header>
       <h1 id="title">
-        <a
-          href="https://www.convertflow.com/call-to-action/tier-11-long-form-landing-page"
-          >tier</a
-        >
+        <a href="#">tier</a>
       </h1>
       <nav>
         <ul>
@@ -34,7 +31,7 @@
             Unlock Your Business <br />Potenial With Facebook& <br />
             Instagram Advertising
           </h2>
-          <p>Facebook Premier <br>Level Partner Agency</p>
+          <p>Facebook Premier <br />Level Partner Agency</p>
           <button>WORK WITH US</button>
         </div>
         <div>
@@ -240,14 +237,13 @@
           <div class="a">
             <h2>RESOURCES</h2>
             <h3>Podcast</h3>
-            <h3>Case Studies </h3>
+            <h3>Case Studies</h3>
           </div>
           <div class="a">
             <h2>CONTACT</h2>
             <h3>Paid Search Ads</h3>
             <h3>Conversion Rate Optimization</h3>
-            <h3>Facebook Ads
-            </h3>
+            <h3>Facebook Ads</h3>
           </div>
         </div>
         <h1 id="icon">
@@ -256,8 +252,25 @@
           <i class="fa-brands fa-linkedin-in"></i>
         </h1>
       </div>
-      <hr>
+      <hr />
       <p>© 2024 Tier 11, Inc. All rights reserved.</p>
     </footer>
+    <!-- Floating back-to-top button -->
+    <button id="backToTop" aria-label="Back to top">↑</button>
+    <script>
+      // Show button when user scrolls down, hide when near top
+      const backBtn = document.getElementById("backToTop");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backBtn.classList.add("visible");
+        } else {
+          backBtn.classList.remove("visible");
+        }
+      });
+      // Smooth scroll to top on click
+      backBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>

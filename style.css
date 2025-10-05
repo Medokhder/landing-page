@@ -538,3 +538,43 @@ body {
     padding-top: 4.5em;
   }
 }
+
+/* Floating back-to-top button */
+#backToTop {
+  position: fixed;
+  right: 1rem;
+  bottom: 1.25rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 200ms ease, transform 200ms ease;
+  z-index: 2000;
+}
+#backToTop.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+#backToTop:focus {
+  outline: 2px solid #fff;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 420px) {
+  #backToTop {
+    right: 0.6rem;
+    bottom: 1rem;
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+}
